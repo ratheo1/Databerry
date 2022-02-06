@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@mixin flex($display, $align, $justify, $gap) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+* {
+    font-family: "Poppins";
+}
+
+body {
+    background-color: rgb(23, 33, 75);
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    .navbar {
+        @include flex(flex, center, space-between, 0px);
+
+        .navbar-item:first-child {
+            @include flex(flex, center, space-between, 70px);
+
+            .logo {
+                color: rgb(102, 168, 255);
+                margin: 0;
+            }
+        }
+
+        .navbar-item {
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        .navbar-item {
+            img {
+                width: 170px;
+                position: absolute;
+                top: -30px;
+            }
+        }
+
+        .navbar-item {
+            .btn-item {
+                color: #fff;
+                background-color: transparent;
+                border: none;
+                padding: 15px 20px;
+                border-radius: 10px;
+                font-weight: 500;
+                margin: 0px 10px;
+                cursor: pointer;
+            }
+            .active {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 100px;
+    
+        p {
+            color: #dadada;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        h1 {
+            color: #fff;
+            font-size: 70px;
+            font-weight: 600;
+            margin: 0px;
+            span {
+                display: inline-block;
+            }
+        }
+        img {
+            width: 420px;
+            z-index: 1;
+        }
+        .float {
+            .float-img {
+                width: 120px;
+                position: absolute;
+                z-index: -1;
+            }
+            #clock {
+                width: 100px;
+            }
+            #bell {
+                width: 100px;
+            }
+            #headset {
+                transform: rotate(10deg);
+                width: 90px;
+            }
+        }
+    }
+    
+    .footer {
+        @include flex(flex, flex-start, space-between, 0);
+        margin-top: -80px;
+        .footer-item {
+            button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                img {
+                    width: 30px;
+                }
+            }
+            p,
+            h2 {
+                color: #fff;
+                margin: 0;
+            }
+            h2 {
+                font-weight: 500;
+            }
+            p {
+                font-size: 13px;
+            }
+            .action {
+                display: inline-block;
+                padding: 0px 100px 50px;
+            }
+        }
+    }
+}
+
+
+
+

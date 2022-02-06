@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #17214b;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.main .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+.main .navbar .navbar-item:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.main .navbar .navbar-item:first-child .logo {
+  color: #66a8ff;
+  margin: 0;
+}
+.main .navbar .navbar-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.main .navbar .navbar-item img {
+  width: 170px;
+  position: absolute;
+  top: -30px;
+}
+.main .navbar .navbar-item .btn-item {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.main .navbar .navbar-item .active {
+  background-color: #fff;
+  color: #000;
+}
+.main .content {
+  text-align: center;
+  margin-top: 100px;
+}
+.main .content p {
+  color: #dadada;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.main .content h1 {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0px;
+}
+.main .content h1 span {
+  display: inline-block;
+}
+.main .content img {
+  width: 420px;
+  z-index: 1;
+}
+.main .content .float .float-img {
+  width: 120px;
+  position: absolute;
+  z-index: -1;
+}
+.main .content .float #clock {
+  width: 100px;
+}
+.main .content .float #bell {
+  width: 100px;
+}
+.main .content .float #headset {
+  transform: rotate(10deg);
+  width: 90px;
+}
+.main .footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0;
+  margin-top: -80px;
+}
+.main .footer .footer-item button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.main .footer .footer-item button img {
+  width: 30px;
+}
+.main .footer .footer-item p,
+.main .footer .footer-item h2 {
+  color: #fff;
+  margin: 0;
+}
+.main .footer .footer-item h2 {
+  font-weight: 500;
+}
+.main .footer .footer-item p {
+  font-size: 13px;
+}
+.main .footer .footer-item .action {
+  display: inline-block;
+  padding: 0px 100px 50px;
+}
+
+/*# sourceMappingURL=build.css.map */
